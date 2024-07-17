@@ -1,19 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Marcellus&display=swap');
+
 :root{
     --cor-fundo: #01080E ;
     --cor-principal: #0B0D20 ;
     --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
+    --cor-destaque: #032CA6;
+    --cor-texto: #fff;
 
 }
 
 body {
-    background-color: var(--cor-fundo);
+    background: radial-gradient(ellipse 80% 400px, #032CA6 50%, #021E73 80%);
     color: var(--cor-texto);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: "Marcellus", serif;
+    font-weight: 00;
 }
 
 .caixa-principal{
@@ -21,23 +25,30 @@ body {
     width: 90%;
     max-width: 600px;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
+    border-radius: 30px;
+    font-size: 20px;
 }
 
 h1{
+    font-size: 40px;
     color: var(--cor-destaque);
 }
 
 button {
     background-color: var(--cor-secundaria);
-    color: var(--cor-texto);
+    color: #fff;
     border: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 18px;
     border-radius: 15px;
     padding: 15px;
-    transition: background-color 0.3s;
+    transition: background-color 1s;
 }
 
 button:hover{
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
+    font-size: 20px;
 }

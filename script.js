@@ -6,71 +6,72 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Ao sair da aula de programação, você descobre uma nova linguagem de programação que promete revolucionar o desenvolvimento de software, permitindo criar aplicativos complexos de forma mais rápida e eficiente. Qual é o seu primeiro pensamento?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                texto: "Isso é incrível!",
+                afirmacao: "Ficou empolgado com o potencial dessa nova linguagem na área de programação."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "Isso é um pouco intimidador!",
+                afirmacao: "Inicialmente sentiu-se desafiado pelas novas possibilidades e complexidades dessa linguagem."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Com a descoberta dessa nova linguagem de programação, um professor renomado de programação da escola decide oferecer uma série de aulas avançadas sobre ela. Ao final de uma aula, ele pede que você escreva um relatório sobre como essa linguagem está impactando o desenvolvimento de software. Qual atitude você toma?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para encontrar exemplos avançados e explicações claras no relatório.",
+                afirmacao: "Conseguiu usar a IA para acessar informações detalhadas sobre a nova linguagem de programação."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                texto: "Escreve o relatório com base nas suas próprias experiências com a linguagem e em pesquisas convencionais sobre o tema.",
+                afirmacao: "Sentiu mais conforto em confiar em suas próprias habilidades de programação para escrever o relatório."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Após completar o relatório, o professor realiza uma discussão em grupo para entender como foi a pesquisa e escrita. Nessa conversa, discute-se o impacto dessa nova linguagem no futuro da programação. Como você se posiciona?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "Defende a ideia de que essa nova linguagem pode abrir novas oportunidades de desenvolvimento e aprimorar a eficiência dos programadores.",
+                afirmacao: "Está impulsionando a inovação na programação com tecnologia avançada e busca novos caminhos profissionais nesse campo."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "Preocupa-se com os programadores que podem ser substituídos por ferramentas automáticas e defende a importância de capacitar os desenvolvedores humanos.",
+                afirmacao: "Sua preocupação com a preservação das habilidades de programação humanas tradicionais motivou a iniciar um grupo de estudos sobre ética na automação de software."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Ao final da discussão, você precisa criar um projeto de software que represente suas ideias sobre o uso dessa nova linguagem. E agora?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "Desenvolver um projeto utilizando conceitos avançados e técnicas modernas de programação.",
+                afirmacao: "Observou que muitos programadores ainda preferem técnicas de programação manual e decidiu compartilhar conhecimentos sobre a nova linguagem com abordagens tradicionais."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "Desenvolver um projeto utilizando ferramentas de automação avançadas.",
+                afirmacao: "Acelerou o processo de desenvolvimento de software utilizando ferramentas automatizadas e agora ensina técnicas de programação utilizando essas ferramentas."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Você tem um projeto em grupo de ciência da computação para entregar na semana seguinte, mas está um pouco atrasado e um membro do grupo decidiu usar um programa de IA para ajudar. O problema é que o projeto está praticamente igual ao que a IA produziu. O que você faz?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "Escrever instruções para o programa de IA é uma forma de contribuir com o projeto, então não há problema em usar o código gerado inteiramente pela IA.",
+                afirmacao: "Infelizmente começou a depender demais da IA para todas as tarefas relacionadas à programação."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "O programa de IA pode ser muito avançado, mas é necessário revisar o projeto para garantir que reflita suas próprias perspectivas e conhecimentos sobre ciência da computação.",
+                afirmacao: "Percebeu que a IA gera código com base em algoritmos e que é essencial revisar e complementar com perspectivas pessoais para garantir a qualidade do projeto."
             }
         ]
     },
 ];
+
 
 
 let atual = 0;
